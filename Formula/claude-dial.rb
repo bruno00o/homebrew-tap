@@ -21,7 +21,7 @@ class ClaudeDial < Formula
   # instead — that launchd agent and brew services are two ways to the same end,
   # so enable only one (both would fight over the port).
   service do
-    run [opt_bin/"claude-dial", "serve"]
+    run [opt_bin/"claude-dial", "serve", "--ble"]
     keep_alive true
     log_path var/"log/claude-dial.log"
     error_log_path var/"log/claude-dial.log"
