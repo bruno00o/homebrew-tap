@@ -7,6 +7,7 @@ physical M5Stack Dial desk companion for Claude Code.
 
 ```sh
 brew tap bruno00o/tap
+brew trust bruno00o/tap   # Homebrew 6+ gates third-party taps
 brew install claude-dial
 ```
 
