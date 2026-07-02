@@ -4,9 +4,9 @@ class ClaudeDial < Formula
   # Prebuilt binary attached to the GitHub Release by the release-binaries
   # workflow; the release's .sha256 asset holds the value below. Apple Silicon
   # only — the BLE bridge targets the Macs this ships to.
-  url "https://github.com/bruno00o/claude-dial/releases/download/v0.11.0/claude-dial_v0.11.0_darwin_arm64.tar.gz"
-  version "0.11.0"
-  sha256 "9b985763cca9407a0d54b02a5556f3f10929e9c56fe64e0f64359768cd8604e8"
+  url "https://github.com/bruno00o/claude-dial/releases/download/v0.12.0/claude-dial_v0.12.0_darwin_arm64.tar.gz"
+  version "0.12.0"
+  sha256 "387390f6961ca0eb1abe1e5ce31029356db87cfa3acb43937a6ea5c947a031ac"
   license "MIT"
 
   depends_on arch: :arm64
