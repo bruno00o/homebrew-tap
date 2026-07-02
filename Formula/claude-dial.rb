@@ -32,10 +32,14 @@ class ClaudeDial < Formula
       Point Claude Code at the bridge (non-blocking session view):
         claude-dial hooks install --monitor-only --write
 
-      Keep the daemon running. Either:
-        brew services start claude-dial            # simulator only
-      or, to drive the physical Dial over BLE:
-        claude-dial service install --ble --write
+      First run — grant Bluetooth so the daemon can reach the Dial. A background
+      service can't show the macOS prompt, so run it once in the foreground and
+      click Allow:
+        claude-dial serve --ble
+        # allow the Bluetooth prompt, watch "dial" go scanning... -> connected, then Ctrl-C
+
+      Then keep it running at login (drives the Dial over BLE):
+        brew services start claude-dial
 
       Open the simulator at http://localhost:8787/
     EOS
