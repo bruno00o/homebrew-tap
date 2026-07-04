@@ -6,7 +6,7 @@ class ClaudeDial < Formula
   # only — the BLE bridge targets the Macs this ships to.
   url "https://github.com/bruno00o/claude-dial/releases/download/v1.1.0/claude-dial_v1.1.0_darwin_arm64.tar.gz"
   version "1.1.0"
-  sha256 "c80d92ba67ce780f56106bfc0f27b65320bc7b2ccff00981a5906cd338dca57f"
+  sha256 "411451df2fc54062160399314bb8c78c49dcb813cd1dbb2163f9c88052d322fa"
   license "MIT"
 
   depends_on arch: :arm64
